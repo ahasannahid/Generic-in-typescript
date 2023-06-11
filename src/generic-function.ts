@@ -1,43 +1,43 @@
-// arrow function
-const createArray=(param:string):string[]=>{
-    return [param];
-}
+// // arrow function
+// const createArray=(param:string):string[]=>{
+//     return [param];
+// }
 
-// generic arrow function(single parameter T)
+// // generic arrow function(single parameter T)
 
-const createArray1=<T>(param:T):T[]=>{
-    return [param];
-}
+// const createArray1=<T>(param:T):T[]=>{
+//     return [param];
+// }
 
-// generic arrow function(double parameter or touple)
-const createArray2=<X, Y>(param1:X, param2:Y):[X, Y]=>{
-    return [param1, param2];
-}
+// // generic arrow function(double parameter or touple)
+// const createArray2=<X, Y>(param1:X, param2:Y):[X, Y]=>{
+//     return [param1, param2];
+// }
 
-const result1 = createArray('Banglaesh')
-const result2 = createArray1<string>('true')
-const result3 = createArray1<boolean>(true)
-const result4 = createArray1<object>({name:'Nahid'}) //not recommended
-const result5 = createArray1<{name:string}>({name:'Nahid'})
+// const result1 = createArray('Banglaesh')
+// const result2 = createArray1<string>('true')
+// const result3 = createArray1<boolean>(true)
+// const result4 = createArray1<object>({name:'Nahid'}) //not recommended
+// const result5 = createArray1<{name:string}>({name:'Nahid'})
 
-// use type with geenric function
-type Name = {name:string}
-const result6 = createArray1<Name>({name:'Nahid'})
+// // use type with geenric function
+// type Name = {name:string}
+// const result6 = createArray1<Name>({name:'Nahid'})
 
-// use interface with geenric function
-interface IName{
-    name:string
-}
-const result7 = createArray1<IName>({name:'Nahid'})
+// // use interface with geenric function
+// interface IName{
+//     name:string
+// }
+// const result7 = createArray1<IName>({name:'Nahid'})
 
-// Touple with geenric function
+// // Touple with geenric function
 
-const result8 = createArray2<string, string>('Bangladesh', 'I love BD')
+// const result8 = createArray2<string, string>('Bangladesh', 'I love BD')
 
-const result9 = createArray2<boolean, string[]>(true, ['USA'])
-const result10 = createArray2<boolean, Array<string>>(true, ['USA'])
+// const result9 = createArray2<boolean, string[]>(true, ['USA'])
+// const result10 = createArray2<boolean, Array<string>>(true, ['USA'])
 
-const result11 = createArray2<Name, boolean>({name: 'BANGLADESH'}, false)
+// const result11 = createArray2<Name, boolean>({name: 'BANGLADESH'}, false)
 
 
 // spread operator
@@ -51,21 +51,23 @@ const result11 = createArray2<Name, boolean>({name: 'BANGLADESH'}, false)
 
 // SPREAD OPERATOR WITH FUNCTION
 
-const addMeInMyCrushMine=<T>(myInfo:T)=> {
-    const crush = 'Kate';
-    const newData = {...myInfo, crush}
-    return  newData;
-}
-const myInfo = {
-    name: 'Nahid',
-    age: 25,
-    salary: 500000
-}
-const result12 = addMeInMyCrushMine(myInfo)
+// const newData = {...myInfo, crush}
+// const addMeInMyCrushMine=<T>(myInfo:T)=> {
+//     const crush = 'Kate';
+//     const newData = {...myInfo, crush}
+//     return  newData;
+// }
+// const myInfo = {
+//     name: 'Nahid',
+//     age: 25,
+//     salary: 500000
+// }
+// const result12 = addMeInMyCrushMine(myInfo)
 
 
-// generic in normal function
 
-function createArray5<X, Y>(param1:X, param2:Y ):[X, Y]{
-    return [param1, param2];
-}
+// // generic in normal function
+
+// function createArray5<X, Y>(param1:X, param2:Y ):[X, Y]{
+//     return [param1, param2];
+// };
