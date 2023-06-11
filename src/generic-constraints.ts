@@ -1,11 +1,29 @@
 // generic type ke force kora
 
 // const newData = {...myInfo, crush}
-const addMeInMyCrushMine=<T extends {name: string, age: number, salary: number}>(myInfo:T)=> {
+// const addMeInMyCrushMine=<T extends {name: string, age: number, salary: number}>(myInfo:T)=> {
+//     const crush = 'Kate';
+//     const newData = {...myInfo, crush}
+//     return  newData;
+// }
+
+// extends with type
+type MandatoryTypes = {name: string, age: number, salary: number};
+// const addMeInMyCrushMine=<T extends MandatoryTypes>(myInfo:T)=> {
+//     const crush = 'Kate';
+//     const newData = {...myInfo, crush}
+//     return  newData;
+// }
+
+// extends with interface
+interface MandatoryInterface{name: string, age: number, salary: number};
+
+const addMeInMyCrushMine=<T extends MandatoryInterface>(myInfo:T)=> {
     const crush = 'Kate';
     const newData = {...myInfo, crush}
     return  newData;
 }
+
 type MyInfoType={
     name : string,
     age : number,
