@@ -20,17 +20,17 @@ const result3 = createArray1<boolean>(true)
 const result4 = createArray1<object>({name:'Nahid'}) //not recommended
 const result5 = createArray1<{name:string}>({name:'Nahid'})
 
-// use type
+// use type with geenric function
 type Name = {name:string}
 const result6 = createArray1<Name>({name:'Nahid'})
 
-// use interface
+// use interface with geenric function
 interface IName{
     name:string
 }
 const result7 = createArray1<IName>({name:'Nahid'})
 
-// Touple
+// Touple with geenric function
 
 const result8 = createArray2<string, string>('Bangladesh', 'I love BD')
 
