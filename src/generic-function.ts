@@ -37,7 +37,7 @@ const result8 = createArray2<string, string>('Bangladesh', 'I love BD')
 const result9 = createArray2<boolean, string[]>(true, ['USA'])
 const result10 = createArray2<boolean, Array<string>>(true, ['USA'])
 
-const result11 = createArray2<Name, boolean>({name: 'BD'}, false)
+const result11 = createArray2<Name, boolean>({name: 'BANGLADESH'}, false)
 
 
 // spread operator
@@ -48,6 +48,8 @@ const result11 = createArray2<Name, boolean>({name: 'BD'}, false)
 //     salary: 500000
 // }
 // const newData = {...myInfo, crush}
+
+// SPREAD OPERATOR WITH FUNCTION
 
 const addMeInMyCrushMine=<T>(myInfo:T)=> {
     const crush = 'Kate';
