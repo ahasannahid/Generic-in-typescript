@@ -7,28 +7,33 @@ type AreaNumber={
     height: number;
     width:number;
 };
-
 type AreaString = {
     height: string;
     width:string;
 }
-
 type AreaReadonly = {
     readonly height: number;
     readonly width:number;
 };
-
 const rectangularArea: AreaReadonly={
     height: 10,
     width: 12
 }
-
-rectangularArea.width=10;
-
+// rectangularArea.width=10;
 type A = AreaNumber['height']  //lookup types
 type B = keyof AreaNumber;  // 'width' | 'height' ekta union type toyari korbe
-
+// bracket notation of object
 // const obj = {
 //     name: 'Nahid'
 // }
 // obj['name'];
+type Volume={
+    height: number;
+    width:number;
+    depth:number;
+};
+type Area = {
+    // [mapping] : type   //index signature
+    // [key in 'height' | 'width'] : number
+    [key in keyof Volume] : number
+}
