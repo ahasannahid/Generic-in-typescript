@@ -5,34 +5,34 @@
  * normally private and readonly use korbo. public by default thake. protected special case e use korbo.
  */
 
-class BankAccount{
-    readonly id : number;
-    name : string;
-    private _balance : number;
-    protected mobile_number : number
+// class BankAccount{
+//     readonly id : number;
+//     name : string;
+//     private _balance : number;
+//     protected mobile_number : number
   
-    constructor(id : number, name: string, balance : number, mobile_number : number){
-        this.id = id
-        this.name = name
-        this._balance = balance
-        this.mobile_number = mobile_number
-    }
-    getBalance(){
-        console.log(`My Current Balance is ${this._balance}`)
-    }
-    addDeposite(amount:number){
-        this._balance = this._balance + amount
-    }
-}
+//     constructor(id : number, name: string, balance : number, mobile_number : number){
+//         this.id = id
+//         this.name = name
+//         this._balance = balance
+//         this.mobile_number = mobile_number
+//     }
+//     getBalance(){
+//         console.log(`My Current Balance is ${this._balance}`)
+//     }
+//     addDeposite(amount:number){
+//         this._balance = this._balance + amount
+//     }
+// }
 
-class StudentAccount extends BankAccount{
-    test(){
+// class StudentAccount extends BankAccount{
+//     test(){
         
-    }
-}
+//     }
+// }
 
 
 
-const myAccount =new BankAccount (444, 'Nahid', 20, 1910613458);
-// myAccount._balance = 0;
-console.log(myAccount)
+// const myAccount =new BankAccount (444, 'Nahid', 20, 1910613458);
+// // myAccount._balance = 0;
+// console.log(myAccount)
