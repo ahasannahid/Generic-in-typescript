@@ -65,6 +65,12 @@ abstract class Vehicle {
 }
 
 class car extends Vehicle {
-   
+    startEngine(): void {
+        console.log('I am starting engine....');
+    }
+    stopEngine(): void {
+        console.log('I am stoping engine....');
+    }
+}
 
 // const car1 = new Vehicle('Car', 'honda', '2015');
