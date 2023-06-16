@@ -1,4 +1,4 @@
-// // Inheritence
+// // Inheritence (extends use korle super call korte hoy)
 // // common class (Parent Class)
 // class Person{
 //     name: string;
