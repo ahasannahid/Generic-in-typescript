@@ -64,7 +64,7 @@ abstract class Vehicle {
     }
 }
 
-class car extends Vehicle {
+class Car extends Vehicle {
     startEngine(): void {
         console.log('I am starting engine....');
     }
@@ -73,4 +73,4 @@ class car extends Vehicle {
     }
 }
 
-// const car1 = new Vehicle('Car', 'honda', '2015');
+const car1 = new Car('Car', 'honda', '2015');
