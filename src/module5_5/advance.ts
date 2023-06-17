@@ -24,3 +24,6 @@ class User implements model{
         }
     }
 }
+
+const user1 = new User('Ahasan', 'Nahid');
+console.log(user1.methods.fullName());
