@@ -17,7 +17,7 @@ type Optional = Partial<Person>
 // Required(reverse of Partial)
 type RequiredProperties = Required<Person>
 
-// Readonly
+// Readonly type
 
 const person:Readonly <Person>={
     name : 'Nahid',
@@ -26,5 +26,23 @@ const person:Readonly <Person>={
 }
 
 // person.name = 'Ahasan'
+
+// Record type
+
+// type myObj = {
+//     a : string,
+//     b : string,
+//     c : string,
+// }
+// using index signature
+type myObj = {
+    [key : string] : string;
+}
+const obj : myObj = {
+    a : '1',
+    b : '2',
+    c : '3',
+    d : '4'
+}
 
 
