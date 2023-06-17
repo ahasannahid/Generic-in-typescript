@@ -14,8 +14,17 @@ type Name = Omit<Person, "email" | "ContactNo">
 // Partial and Required(jokhn kono property optional thake)
 // to make al the properties be optional type we use partial
 type Optional = Partial<Person>
-
 // Required(reverse of Partial)
 type RequiredProperties = Required<Person>
+
+// Readonly
+
+const person:Readonly <Person>={
+    name : 'Nahid',
+    email : 'ahanhid123@gmail.com',
+    ContactNo : '01910613458'
+}
+
+// person.name = 'Ahasan'
 
 
