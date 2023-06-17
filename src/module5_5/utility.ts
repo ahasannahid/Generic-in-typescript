@@ -35,14 +35,19 @@ const person:Readonly <Person>={
 //     c : string,
 // }
 // using index signature
-type myObj = {
-    [key : string] : string;
-}
+// type myObj = {
+//     // [key : string] : string;
+//     [key : 'a' | 'b' | 'c'] : string;
+// }
+
+// Record Type implement(key er type ki hobe and key hobe kon type)
+// 'a' | 'b' | 'c']
+type myObj = Record<'a' | 'b' | 'c', string>
+
 const obj : myObj = {
     a : '1',
     b : '2',
     c : '3',
-    d : '4'
 }
 
 
