@@ -1,3 +1,4 @@
 "use strict";
-const course = "Next level web Development";
-console.log(course);
+// const course: string = "Next level web Development"
+// const course1: string = "Next level web "
+// console.log(course);
